@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscrição - Campeonato de E-Sports</title>
+  <link href="dist/output.css" rel="stylesheet" />
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
+  <form class="bg-white p-8 rounded shadow-md w-full max-w-lg space-y-6">
+    <h1 class="text-2xl font-bold text-gray-800 text-center">Inscrição no Campeonato</h1>
+
+    <div>
+      <label class="block text-gray-700">Nome do Jogador</label>
+      <input type="text" name="nome" class="w-full border border-gray-300 rounded px-4 py-2 mt-1" required />
+    </div>
+
+    <div>
+      <label class="block text-gray-700">Jogo Preferido</label>
+      <select name="jogo" class="w-full border border-gray-300 rounded px-4 py-2 mt-1" required>
+        <option value="">Selecione</option>
+        <option value="valorant">Valorant</option>
+        <option value="lol">League of Legends</option>
+        <option value="cs">Counter-Strike</option>
+        <option value="fortnite">Fortnite</option>
+      </select>
+    </div>
+
+    <div>
+      <span class="block text-gray-700 mb-1">Plataforma Utilizada</span>
+      <div class="flex space-x-4">
+        <label><input type="radio" name="plataforma" value="PC" required /> PC</label>
+        <label><input type="radio" name="plataforma" value="Console" required /> Console</label>
+        <label><input type="radio" name="plataforma" value="Mobile" required /> Mobile</label>
+      </div>
+    </div>
+
+    <div>
+      <label class="block text-gray-700">Tag do Jogador</label>
+      <input type="text" name="tag" class="w-full border border-gray-300 rounded px-4 py-2 mt-1" required />
+    </div>
+
+    <div>
+      <label class="block text-gray-700">Upload de Gameplay</label>
+      <input type="file" name="gameplay" accept=".mp4, .mov" class="w-full mt-1" required />
+    </div>
+
+    <div>
+      <label class="block text-gray-700">E-mail de Contato</label>
+      <input type="email" name="email" class="w-full border border-gray-300 rounded px-4 py-2 mt-1" required />
+    </div>
+
+    <div>
+      <label class="block text-gray-700">Número de Telefone</label>
+      <input type="tel" name="telefone" class="w-full border border-gray-300 rounded px-4 py-2 mt-1" />
+    </div>
+
+    <div>
+      <label class="block text-gray-700">CPF do Jogador</label>
+      <input type="text" name="cpf" maxlength="11" pattern="\d{11}" class="w-full border border-gray-300 rounded px-4 py-2 mt-1" required />
+    </div>
+
+    <div class="flex items-center">
+      <input type="checkbox" name="regras" class="mr-2" required />
+      <label class="text-gray-700">Li e aceito as regras do campeonato</label>
+    </div>
+
+    <div>
+      <label class="block text-gray-700">Senha de Acesso</label>
+      <input type="password" name="senha" class="w-full border border-gray-300 rounded px-4 py-2 mt-1" required />
+    </div>
+
+    <div>
+      <button type="submit" class="w-full bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Enviar Inscrição</button>
+    </div>
+  </form>
+</body>
+</html>
