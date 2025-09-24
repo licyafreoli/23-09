@@ -1,81 +1,67 @@
-🕹️ Formulário de Inscrição - Campeonato de E-Sports
+# 🕹️ Formulário de Inscrição - Campeonato de E-Sports
 
-Este projeto é um formulário de inscrição para jogadores que desejam participar de um campeonato de e-sports. Ele coleta informações essenciais dos participantes e permite o envio de um clipe de gameplay.
+Este é um formulário de inscrição para um campeonato de e-sports, desenvolvido com **HTML** e estilizado com **Tailwind CSS**. O objetivo é coletar informações essenciais dos jogadores de forma clara e validada.
 
-✨ Funcionalidades
+## ✨ Funcionalidades
 
-O formulário possui os seguintes campos e recursos:
+O formulário contém os seguintes campos:
 
-Nome do Jogador: Campo de texto livre para inserir o nome completo.
+- **Nome do Jogador** (campo de texto)
+- **Jogo Preferido** (menu `<select>`)
+  - Valorant
+  - League of Legends (LoL)
+  - Counter-Strike (CS)
+  - Fortnite
+- **Plataforma Utilizada** (opções via radio button)
+  - PC
+  - Console
+  - Mobile
+- **Tag do Jogador** (campo de texto)
+- **Upload de Gameplay** (aceita arquivos `.mp4` ou `.mov`)
+- **E-mail de Contato** (validação automática de e-mail)
+- **Número de Telefone**
+- **CPF do Jogador** (obrigatório, até 11 caracteres numéricos)
+- **Concordância com as Regras**
+  - Checkbox: "Li e aceito as regras do campeonato" (obrigatório)
+- **Criação de Senha**
+  - Campo obrigatório para acesso ao painel do jogador
 
-Jogo Preferido: Menu suspenso (select) com as opções:
+## 🧪 Tecnologias Utilizadas
 
-Valorant
+- **HTML5**
+- **Tailwind CSS**
+- (Opcional) **JavaScript** para validações e interações
 
-League of Legends (LoL)
+## ✅ Validações e Regras
 
-Counter-Strike (CS)
+- O CPF aceita somente números (até 11 caracteres).
+- O e-mail deve estar no formato válido (com `@` e domínio).
+- O upload aceita apenas arquivos de vídeo `.mp4` ou `.mov`.
+- A senha é obrigatória.
+- O formulário não é enviado sem a marcação da caixa de concordância com as regras.
 
-Fortnite
 
-Plataforma Utilizada: Opções com botões de seleção única (radio buttons):
+## 🚀 Como Usar
 
-PC
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   ```
+2. Instale o Tailwind CSS (caso esteja usando via CLI):
+   ```bash
+   npm install -D tailwindcss
+   npx tailwindcss init
+   ```
+3. Compile o CSS:
+   ```bash
+   npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+   ```
+4. Abra o arquivo `index.html` no navegador.
 
-Console
+## 📄 Licença
 
-Mobile
+Este projeto é de uso **educacional e demonstrativo**. Sinta-se à vontade para reutilizar, adaptar ou expandir conforme sua necessidade.
 
-Tag do Jogador: Campo de texto para inserir a gamer tag.
+---
 
-Upload de Gameplay: Campo de upload de arquivo, aceitando apenas vídeos nos formatos .mp4 ou .mov.
-
-E-mail de Contato: Campo de e-mail com validação automática.
-
-Número de Telefone: Campo numérico para contato do jogador.
-
-CPF do Jogador: Campo obrigatório, com limite de 11 caracteres.
-
-Concordância com Regras: Checkbox obrigatório com a frase:
-
-"Li e aceito as regras do campeonato"
-
-Criação de Senha: Campo obrigatório para que o jogador possa criar uma senha de acesso ao painel.
-
-📌 Requisitos
-
-Caso deseje executar este projeto localmente, você precisa de:
-
-Navegador moderno (Chrome, Firefox, Edge, etc.)
-
-(Opcional) Editor de código como Visual Studio Code
-
-🚀 Como usar
-
-Clone o repositório ou abra o arquivo HTML no seu navegador.
-
-Preencha todos os campos obrigatórios.
-
-Envie o formulário para completar sua inscrição.
-
-🛡️ Validações e Regras
-
-Todos os campos obrigatórios devem ser preenchidos corretamente.
-
-O CPF aceita apenas 11 caracteres numéricos.
-
-Apenas vídeos .mp4 ou .mov são aceitos no upload.
-
-A inscrição só é concluída após a aceitação das regras do campeonato.
-
-📁 Tecnologias Utilizadas
-
-HTML5
-
-CSS3 (opcional)
-
-JavaScript (caso haja validações ou interatividade)
-
-📄 Licença
-
-Este projeto é de uso educacional/demonstrativo. Sinta-se livre para modificar e usar conforme necessário.
+Desenvolvido para inscrições em campeonatos de e-sports 🎮 com design moderno via Tailwind CSS.
